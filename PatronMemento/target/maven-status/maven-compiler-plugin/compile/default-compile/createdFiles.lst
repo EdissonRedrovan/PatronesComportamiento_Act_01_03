@@ -1,0 +1,4 @@
+est/ups/edu/ec/patronmemento/PatronMemento.class
+est/ups/edu/ec/patronmemento/impl/TextMemento.class
+est/ups/edu/ec/patronmemento/impl/EditorCaretaker.class
+est/ups/edu/ec/patronmemento/entity/TextEditor.class
