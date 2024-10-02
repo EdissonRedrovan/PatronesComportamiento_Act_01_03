@@ -8,12 +8,13 @@ package ec.edu.ups.model;
  *
  * @author adrian
  */
-public class Suma  implements Expression{
+public class Multiplicacion implements Expression{
 
     private  Expression expressionIzq;
     private Expression expressionDer;
 
-    public Suma(Expression expressionIzq, Expression expressionDer) {
+
+    public Multiplicacion(Expression expressionIzq, Expression expressionDer) {
         this.expressionIzq = expressionIzq;
         this.expressionDer = expressionDer;
     }
@@ -35,10 +36,10 @@ public class Suma  implements Expression{
         this.expressionDer = expressionDer;
     }
     
-    
     @Override
     public double interpreter() {
-        return expressionIzq.interpreter()+ expressionDer.interpreter();
+         return expressionIzq.interpreter()* expressionDer.interpreter();
+
     }
     
 }
